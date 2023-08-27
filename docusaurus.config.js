@@ -10,10 +10,10 @@ const config = {
   tagline: 'Aoi.canvas docs',
   favicon: 'img/favicon.ico',
 
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://aoicanvas.vercel.app',
   baseUrl: '/',
   organizationName: 'lordex',
-  projectName: 'docusaurus',
+  projectName: 'aoicanvas',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
