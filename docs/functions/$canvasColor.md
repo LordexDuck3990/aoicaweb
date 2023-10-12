@@ -13,7 +13,7 @@ It changes current color of the canvas.
 ## Usage
 
 ```
-$canvasColor[canvas;color]
+$canvasColor[canvas;color;type]
 ```
 
 ## Parameters
@@ -22,6 +22,7 @@ $canvasColor[canvas;color]
 | ----- | ---- | ----------- | :------: |
 | canvas | string | Name of the canvas. | yes |
 | color | hex | Color. | yes |
+| color | hex | Type. (content/stroke) | no |
 
 ## Example(s)
 

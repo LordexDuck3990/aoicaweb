@@ -13,7 +13,7 @@ It adds shadow to the canvas.
 ## Usage
 
 ```
-$setShadow[canvas;size;color]
+$setShadow[canvas;size]
 ```
 
 ## Parameters
@@ -22,7 +22,6 @@ $setShadow[canvas;size;color]
 | ----- | ---- | ----------- | :------: |
 | canvas | string | Name of the canvas. | yes |
 | size | number | Size of shadow. | yes |
-| color | hex | Color. | yes |
 
 ## Example(s)
 
@@ -34,7 +33,8 @@ bot.command({
     code: `
     $sendCanvas[pro]
     $drawText[pro;Pro;225;450]
-    $setShadow[pro;20;#FFFFFF]
+    $setShadow[pro;20]
+    $canvasColor[pro;#FFFFFF;shadow]
     $font[pro;50px Arial]
     $canvasColor[pro;#000000]
     $drawImage[pro;avatar;0;0;512;512]

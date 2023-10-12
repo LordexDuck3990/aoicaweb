@@ -37,7 +37,8 @@ bot.command({
     code: `
     $sendCanvas[pro]
     $drawText[pro;Pro;225;450]
-    $setShadow[pro;20;#FFFFFF]
+    $setShadow[pro;20]
+    $canvasColor[pro;#FFFFFF;shadow]
     $font[pro;50px Futura]
     $canvasColor[pro;#000000]
     $drawImage[pro;avatar;0;0;512;512]

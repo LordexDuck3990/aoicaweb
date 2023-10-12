@@ -15,13 +15,8 @@ const config = {
   organizationName: 'lordex',
   projectName: 'aoicanvas',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
 
   presets: [
     [
@@ -43,8 +38,18 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+
+      /*announcementBar: {
+        id: "support_us",
+        content:
+          '',
+        backgroundColor: "#1976d2",
+        textColor: "#ffffff",
+        isCloseable: false,
+      }, */
+
       // Replace with your project's social card
-      image: 'https://github.com/aoijs/website/blob/main/assets/images/aoijs-banner.png?raw=true',
+      image: 'img/banner.png',
       navbar: {
         title: 'Aoi.Canvas',
         logo: {
@@ -69,7 +74,7 @@ const config = {
             href: 'https://github.com/lordexduck3990/aoi.canvas',
             label: 'GIT',
             position: 'right',
-          },
+          }
         ],
       },
       colorMode: {

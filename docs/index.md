@@ -26,7 +26,8 @@ const aoicanvas = require("aoi.canvas");
 
 ```js
 aoicanvas.load({
-  bot: bot, // aoi.js Bot object.
+  client: client, // aoi.js Bot object.
+  Util: Util, // To make aoi.canvas parser work. ($sendMessage, $channelSendMessage, $interactionReply, etc)
   DownloadFolder: "./folder/", // Folder for $downloadCanvas and $downloadGIF, optional.
   ErrorsType: "console" // AoiCanvas errors type, optional. (console/message/none)
 });
@@ -39,12 +40,12 @@ aoicanvas.load({
 # Example
 
 ```js
-const { AoiClient } = require("aoi.js");
+const { AoiClient, Util } = require("aoi.js");
 const aoicanvas = require("aoi.canvas");
  
-const bot = new AoiClient({
-  token: "BOT TOKEN",
-  prefix: "BOT PREFIX",
+const client = new AoiClient({
+  token: "Discord Bot Token",
+  prefix: "Discord Bot Prefix",
   intents: ["MessageContent", "Guilds", "GuildMessages"],
   events: ["onMessage", "onInteractionCreate"],
   database: {
@@ -53,13 +54,14 @@ const bot = new AoiClient({
     tables: ["main"],
     path: "./database/",
     extraOptions: {
-      dbType: "KeyValue"
-    }
-  }
+      dbType: "KeyValue",
+    },
+  },
 });
  
 aoicanvas.load({
-  bot: bot, // the aoi.js bot
+  client: client, // the aoi.js bot
+  Util: Util, // To make aoi.canvas parser work. ($sendMessage, $channelSendMessage, $interactionReply, etc)
   DownloadFolder: "./aoicanvas/", // download folder for $downloadCanvas and $downloadGIF
   ErrorsType: "console" // errors type (console/message)
 });
@@ -69,8 +71,24 @@ bot.command({
   name: "ping",
   code: `Pong! $pingms`
 });
+
+// Pro Avatar Command Example
+bot.command({
+    name: "pro",
+    code: `
+    $sendCanvas[pro]
+    $drawText[pro;Pro;225;450]
+    $setShadow[pro;20]
+    $canvasColor[pro;#FFFFFF;shadow]
+    $font[pro;50px Arial]
+    $canvasColor[pro;#000000]
+    $drawImage[pro;avatar;0;0;512;512]
+    $loadImage[pro;avatar;url;$nonEscape[$authorAvatar]]
+    $createCanvas[pro;512;512]
+    `
+});
  
-// Leref Command Example (The best)
+// Leref Pro Command Example
 bot.command({
   name: "leref",
   code: `
@@ -80,3 +98,4 @@ bot.command({
 });
 ```
 
+<3

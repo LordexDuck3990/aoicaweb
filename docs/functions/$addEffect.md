@@ -1,22 +1,22 @@
 ---
-title: $setCFilter
-description: $setCFilter will set current filter in the canvas.
-id: setCFilter
+title: $addEffect
+description: $addEffect will set current effect in the canvas.
+id: addeffect
 ---
 
-# $setCFilter
+# $addEffect
 
-It sets filter in canvas.
+It adds effect in canvas.
 
 ---
 
 ## Usage
 
 ```
-$setCFilter[canvas;filter;value]
+$addEffect[canvas;filter;value]
 ```
 
-**Filters: blur, grayscale, sepia, brightness, contrast, invert, saturate**
+**Effects: blur, grayscale, sepia, brightness, contrast, invert, saturate**
 
 ## Parameters
 
@@ -32,11 +32,12 @@ It will send new blurred/neon color canvas.
 
 ```js
 bot.command({
-    name: "bcolor",
+    name: "dark-b-color",
     code: `
     $sendCanvas[somename]
     $fillRect[somename;0;0;512;512]
-    $setCFilter[somename;blur;10]
+    $addEffect[somename;grayscale;50]
+    $addEffect[somename;blur;10]
     $canvasColor[somename;$message[1]]
     $createCanvas[somename]
     $onlyIf[$isValidHex[$message[1]]==true;Please provide a valid hex.]
@@ -46,4 +47,4 @@ bot.command({
 
 ### Showcase
 
-![](img/bcolor.png)
+![](img/dark-b-color.png)

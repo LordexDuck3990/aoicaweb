@@ -1,19 +1,19 @@
 ---
-title: $drawText
-description: $drawText will draw text in the canvas.
-id: drawText
+title: $strokeText
+description: $strokeText will draw text outlines in the canvas.
+id: strokeText
 ---
 
-# $drawText
+# $strokeText
 
-It draws text in canvas.
+It draws text outlines in canvas.
 
 ---
 
 ## Usage
 
 ```
-$drawText[canvas;text;x;y]
+$strokeText[canvas;text;x;y;strokesize?]
 ```
 
 ## Parameters
@@ -24,6 +24,7 @@ $drawText[canvas;text;x;y]
 | text | string | Text to draw. | yes |
 | x | number | X position of the text. | yes |
 | y | number | Y position of the text. | yes |
+| strokesize | number | Stroke size. | yes |
 
 ## Example(s)
 
@@ -34,10 +35,10 @@ bot.command({
     name: "pro",
     code: `
     $sendCanvas[pro]
-    $drawText[pro;Pro;225;450]
-    $setShadow[pro;20]
-    $canvasColor[pro;#FFFFFF;shadow]
-    $font[pro;50px Arial]
+    $strokeText[pro;Pro;center;450;1]
+    $canvasColor[pro;#FFFFFF;stroke]
+    $drawText[pro;Pro;center;450]
+    $font[pro;100px Microsoft Sans Serif']
     $canvasColor[pro;#000000]
     $drawImage[pro;avatar;0;0;512;512]
     $loadImage[pro;avatar;url;$nonEscape[$authorAvatar]]
@@ -48,4 +49,4 @@ bot.command({
 
 ### Showcase
 
-![](img/pro.png)
+![](img/probutwithstroke.png)

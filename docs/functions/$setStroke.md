@@ -21,7 +21,6 @@ $setStroke[canvas;color;size]
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
 | canvas | string | Name of the canvas. | yes |
-| color | hex | Color. | yes |
 | size | number | Size of stroke. | yes |
 
 ## Example(s)
@@ -33,8 +32,9 @@ bot.command({
     name: "c-av",
     code: `
     $sendCanvas[a]
-    $setStroke[a;#FFFFFF;15]
+    $setStroke[a;15]
     $drawImage[a;avatar;60;50;400;400;205]
+    $canvasColor[a;#FFFFFF;stoke]
     $loadImage[a;avatar;url;$nonEscape[$authorAvatar]]
     $createCanvas[a;512;512]
     `
