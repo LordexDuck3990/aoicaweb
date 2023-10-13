@@ -40,7 +40,7 @@ function CopyToClipboardButton() {
         >
            <span className={styles.copyIconWrapper}>
             <FileCopyIcon className={styles.copyIcon} />
-            {isCopied && <CheckmarkIcon className={styles.checkmarkIcon} />}
+            {isCopied}
           </span>
         </button>
       </div>
