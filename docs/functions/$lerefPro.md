@@ -4,15 +4,11 @@ description: $lerefPro will automatically make leref pro canvas.
 id: lerefPro
 ---
 
-# $lerefPro
-
-It creates new leref pro canvas.
-
----
+It creates new leref pro canvas. (Best function ever)
 
 ## Usage
 
-```
+```php
 $lerefPro
 ```
 
@@ -36,4 +32,4 @@ bot.command({
 
 ### Showcase
 
-![](img/lerefpro.png)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/lerefpro.png?raw=true)

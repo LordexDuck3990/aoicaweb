@@ -4,15 +4,11 @@ description: $createGIF will create GIF.
 id: createGIF
 ---
 
-# $createGIF
-
 It creates new GIF.
-
----
 
 ## Usage
 
-```
+```php
 $createGIF[gif;width?;height?]
 ```
 
@@ -20,9 +16,9 @@ $createGIF[gif;width?;height?]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| gif | string | Name of the gif. | yes |
-| width | number | Width of the gif. | yes |
-| height | number | Height of the gif. | yes |
+| gif | string | Name of the gif. | true |
+| width | number | Width of the gif. | true |
+| height | number | Height of the gif. | true |
 
 ## Example(s)
 
@@ -65,4 +61,4 @@ bot.command({
 
 ### Showcase
 
-![](img/colorgif.gif)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/colorgif.png?raw=true)

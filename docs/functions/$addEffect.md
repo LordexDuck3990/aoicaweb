@@ -4,15 +4,11 @@ description: $addEffect will set current effect in the canvas.
 id: addeffect
 ---
 
-# $addEffect
-
 It adds effect in canvas.
-
----
 
 ## Usage
 
-```
+```php
 $addEffect[canvas;filter;value]
 ```
 
@@ -22,13 +18,13 @@ $addEffect[canvas;filter;value]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| canvas | string | Name of the canvas. | yes |
-| filter | string | Filter. | yes |
-| value | number | Value of filter. | yes |
+| canvas | string | Name of the canvas. | true |
+| filter | string | Filter. | true |
+| value | number | Value of filter. | true |
 
 ## Example(s)
 
-It will send new blurred/neon color canvas.
+This example will send new blurred/neon color canvas.
 
 ```js
 bot.command({
@@ -47,4 +43,4 @@ bot.command({
 
 ### Showcase
 
-![](img/dark-b-color.png)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/dark-b-color.png?raw=true)

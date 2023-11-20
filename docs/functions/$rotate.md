@@ -4,15 +4,11 @@ description: $rotate will rotate the canvas.
 id: rotate
 ---
 
-# $rotate
-
 It rotates the canvas.
-
----
 
 ## Usage
 
-```
+```php
 $rotate[canvas;angle]
 ```
 
@@ -20,8 +16,8 @@ $rotate[canvas;angle]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| canvas | string | Name of the canvas. | yes |
-| angle | number | Angle. | yes |
+| canvas | string | Name of the canvas. | true |
+| angle | number | Angle. | true |
 
 ## Example(s)
 
@@ -43,4 +39,4 @@ bot.command({
 
 ### Showcase
 
-![](img/rotated.png)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/rotated.png?raw=true)

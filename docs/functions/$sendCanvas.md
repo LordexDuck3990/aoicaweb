@@ -4,25 +4,21 @@ description: $sendCanvas will send the canvas.
 id: sendCanvas
 ---
 
-# $sendCanvas
-
 It sends the canvas.
-
----
 
 ## Usage
 
-```
-$sendCanvas[canvas;type?(msg/image);index?]
+```php
+$sendCanvas[canvas;type?(msg/image/footer/author/thumbnail);index?]
 ```
 
 ## Parameters
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| canvas | string | Name of the canvas. | yes |
-| type | string | Type. | no |
-| index | number | Index of embed. | no |
+| canvas | string | Name of the canvas. | true |
+| type | string | Type. | false |
+| index | number | Index of embed. | false |
 
 ## Example(s)
 
@@ -43,4 +39,4 @@ bot.command({
 
 ### Showcase
 
-![](img/color.png)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/color.png?raw=true)

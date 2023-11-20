@@ -4,15 +4,11 @@ description: $createCanvas will create new canvas.
 id: createCanvas
 ---
 
-# $createCanvas
-
 It creates new canvas.
-
----
 
 ## Usage
 
-```
+```php
 $createCanvas[canvas;width?;height?]
 ```
 
@@ -20,9 +16,9 @@ $createCanvas[canvas;width?;height?]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| canvas | string | Name of the new canvas. | yes |
-| width | number | Width of the canvas. | no |
-| height | number | Height of the canvas. | no |
+| canvas | string | Name of the new canvas. | true |
+| width | number | Width of the canvas. | false |
+| height | number | Height of the canvas. | false |
 
 ## Example(s)
 
@@ -47,4 +43,4 @@ bot.command({
 
 ### Showcase
 
-![](img/pro.png)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/pro.png?raw=true)

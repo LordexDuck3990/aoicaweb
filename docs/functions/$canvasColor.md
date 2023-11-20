@@ -3,26 +3,21 @@ title: $canvasColor
 description: $canvasColor will set current color of the canvas. 
 id: canvasColor
 ---
-
-# $canvasColor
-
 It changes current color of the canvas.
-
----
 
 ## Usage
 
-```
-$canvasColor[canvas;color;type]
+```php
+$canvasColor[canvas;color;type?]
 ```
 
 ## Parameters
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| canvas | string | Name of the canvas. | yes |
-| color | hex | Color. | yes |
-| color | hex | Type. (content/stroke) | no |
+| canvas | string | Name of the canvas. | true |
+| color | hex | Color. (you can also use %get% to get the color) | true |
+| type | string | Type. (content/stroke/shadow) | false |
 
 ## Example(s)
 
@@ -46,4 +41,4 @@ bot.command({
 
 ### Showcase
 
-![](img/pro.png)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/pro.png?raw=true)

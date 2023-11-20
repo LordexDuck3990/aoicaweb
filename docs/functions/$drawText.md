@@ -4,15 +4,11 @@ description: $drawText will draw text in the canvas.
 id: drawText
 ---
 
-# $drawText
-
 It draws text in canvas.
-
----
 
 ## Usage
 
-```
+```php
 $drawText[canvas;text;x;y]
 ```
 
@@ -20,10 +16,10 @@ $drawText[canvas;text;x;y]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| canvas | string | Name of the canvas. | yes |
-| text | string | Text to draw. | yes |
-| x | number | X position of the text. | yes |
-| y | number | Y position of the text. | yes |
+| canvas | string | Name of the canvas. | true |
+| text | string | Text to draw. | true |
+| x | number | X position of the text. | true |
+| y | number | Y position of the text. | true |
 
 ## Example(s)
 
@@ -48,4 +44,4 @@ bot.command({
 
 ### Showcase
 
-![](img/pro.png)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/pro.png?raw=true)

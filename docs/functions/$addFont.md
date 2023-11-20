@@ -4,15 +4,11 @@ description: $addFont will add font to the canvas.
 id: addFont
 ---
 
-# $addFont
-
 It adds font to the canvas.
-
----
 
 ## Usage
 
-```
+```php
 $addFont[canvas;font;path]
 ```
 
@@ -20,9 +16,9 @@ $addFont[canvas;font;path]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| canvas | string | Name of the canvas. | yes |
-| font | string | Font name. | yes |
-| path | string | Path to font. | yes |
+| canvas | string | Name of the canvas. | true |
+| font | string | Font name. | true |
+| path | string | Path to font. | true |
 
 ## Example(s)
 
@@ -57,4 +53,4 @@ bot.command({
 
 **Not custom font:**
 
-![](img/pro.png)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/pro.png?raw=true)

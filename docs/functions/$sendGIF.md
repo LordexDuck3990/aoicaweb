@@ -4,25 +4,21 @@ description: $sendGIF will start gif editing process.
 id: sendGIF
 ---
 
-# $sendGIF
-
-It sets gif property. (delay, quality, threshold, repeat)
-
----
+It sends the gif.
 
 ## Usage
 
-```
-$sendGIF[gif;type?(msg/image);index?]
+```php
+$sendGIF[gif;type?(msg/image/thumbnail/author/footer);index?]
 ```
 
 ## Parameters
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| gif | string | Name of the gif. | yes |
-| type | string | Type. | no |
-| index | number | Index of embed. | no |
+| gif | string | Name of the gif. | true |
+| type | string | Type. | false |
+| index | number | Index of embed. | false |
 
 ## Example(s)
 
@@ -65,4 +61,4 @@ bot.command({
 
 ### Showcase
 
-![](img/colorgif.gif)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/colorgif.png?raw=true)

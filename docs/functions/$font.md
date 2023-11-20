@@ -4,15 +4,11 @@ description: $font will change the current font of the canvas.
 id: font
 ---
 
-# $font
-
 It changes the current font of the canvas.
-
----
 
 ## Usage
 
-```
+```php
 $font[canvas;font]
 ```
 
@@ -20,8 +16,8 @@ $font[canvas;font]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| canvas | string | Name of the canvas. | yes |
-| font | string | The font in "{size}px {font name}" format. | yes |
+| canvas | string | Name of the canvas. | true |
+| font | string | The font in "{size}px {font name}" format. | true |
 
 ## Example(s)
 
@@ -46,4 +42,4 @@ bot.command({
 
 ### Showcase
 
-![](img/pro.png)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/pro.png?raw=true)

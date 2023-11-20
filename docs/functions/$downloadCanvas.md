@@ -4,15 +4,11 @@ description: $downloadCanvas will download the canvas.
 id: downloadCanvas
 ---
 
-# $downloadCanvas
-
 It downloads the canvas to "DownloadFolder" folder.
-
----
 
 ## Usage
 
-```
+```php
 $downloadCanvas[canvas;filename?]
 ```
 
@@ -20,8 +16,8 @@ $downloadCanvas[canvas;filename?]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| canvas | string | Name of the canvas. | yes |
-| filename | string | Name of the canvas png file. | no |
+| canvas | string | Name of the canvas. | true |
+| filename | string | Name of the canvas png file. | false |
 
 ## Example(s)
 
@@ -42,4 +38,4 @@ bot.command({
 
 ### Showcase
 
-![](img/dcolor.png)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/dcolor.png?raw=true)

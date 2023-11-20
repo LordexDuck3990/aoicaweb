@@ -4,15 +4,11 @@ description: $setEffect will set current effect in the canvas.
 id: seteffect
 ---
 
-# $setEffect
-
 It sets effect in canvas.
-
----
 
 ## Usage
 
-```
+```php
 $setEffect[canvas;filter;value]
 ```
 
@@ -23,9 +19,9 @@ use none if you want to remove effect to next things.
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| canvas | string | Name of the canvas. | yes |
-| filter | string | Filter. | yes |
-| value | number | Value of filter. | yes |
+| canvas | string | Name of the canvas. | true |
+| filter | string | Filter. | true |
+| value | number | Value of filter. | true |
 
 ## Example(s)
 
@@ -47,4 +43,4 @@ bot.command({
 
 ### Showcase
 
-![](img/bcolor.png)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/bcolor.png?raw=true)

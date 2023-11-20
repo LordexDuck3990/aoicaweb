@@ -4,15 +4,11 @@ description: $ayakaPro will automatically make ayaka pro canvas.
 id: ayakaPro
 ---
 
-# $ayakaPro
-
-It creates new leref pro canvas.
-
----
+It creates new ayaka pro canvas.
 
 ## Usage
 
-```
+```php
 $ayakaPro
 ```
 
@@ -22,7 +18,7 @@ None
 
 ## Example(s)
 
-It will send new leref pro canvas.
+It will send new ayaka pro canvas.
 
 ```js
 bot.command({
@@ -36,4 +32,4 @@ bot.command({
 
 ### Showcase
 
-![](img/ayakapro.png)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/ayakapro.png?raw=true)

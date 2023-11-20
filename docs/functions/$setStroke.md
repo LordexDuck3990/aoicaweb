@@ -4,15 +4,11 @@ description: $setStroke will add stroke to the canvas.
 id: setStroke
 ---
 
-# $setStroke
-
 It adds stroke to the canvas.
-
----
 
 ## Usage
 
-```
+```php
 $setStroke[canvas;color;size]
 ```
 
@@ -20,8 +16,8 @@ $setStroke[canvas;color;size]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| canvas | string | Name of the canvas. | yes |
-| size | number | Size of stroke. | yes |
+| canvas | string | Name of the canvas. | true |
+| size | number | Size of stroke. | true |
 
 ## Example(s)
 
@@ -43,4 +39,4 @@ bot.command({
 
 ### Showcase
 
-![](img/c-av.png)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/c-av.png?raw=true)

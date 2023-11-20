@@ -4,15 +4,11 @@ description: $strokeText will draw text outlines in the canvas.
 id: strokeText
 ---
 
-# $strokeText
-
 It draws text outlines in canvas.
-
----
 
 ## Usage
 
-```
+```php
 $strokeText[canvas;text;x;y;strokesize?]
 ```
 
@@ -20,11 +16,11 @@ $strokeText[canvas;text;x;y;strokesize?]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| canvas | string | Name of the canvas. | yes |
-| text | string | Text to draw. | yes |
-| x | number | X position of the text. | yes |
-| y | number | Y position of the text. | yes |
-| strokesize | number | Stroke size. | yes |
+| canvas | string | Name of the canvas. | true |
+| text | string | Text to draw. | true |
+| x | number | X position of the text. | true |
+| y | number | Y position of the text. | true |
+| strokesize | number | Stroke size. | false |
 
 ## Example(s)
 
@@ -49,4 +45,4 @@ bot.command({
 
 ### Showcase
 
-![](img/probutwithstroke.png)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/probutwithstroke.png?raw=true)

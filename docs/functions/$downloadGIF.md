@@ -4,15 +4,11 @@ description: $downloadGIF will download the GIF.
 id: will download the canvas.
 ---
 
-# $downloadGIF
-
 It downloads the canvas to "DownloadFolder" folder.
-
----
 
 ## Usage
 
-```
+```php
 $downloadGIF[gif;filename?]
 ```
 
@@ -20,8 +16,8 @@ $downloadGIF[gif;filename?]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| gif | string | Name of the gif. | yes |
-| filename | string | Name of the gif file. | no |
+| gif | string | Name of the gif. | true |
+| filename | string | Name of the gif file. | false |
 
 ## Example(s)
 
@@ -64,4 +60,4 @@ bot.command({
 
 ### Showcase
 
-![](img/dgcolor.png)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/dgcolor.png?raw=true)

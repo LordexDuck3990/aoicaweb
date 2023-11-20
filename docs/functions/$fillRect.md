@@ -4,15 +4,11 @@ description: $fillRect will fill rect in canvas.
 id: fillRect
 ---
 
-# $fillRect
-
 It fills rect in canvas.
-
----
 
 ## Usage
 
-```
+```php
 $fillRect[canvas;x;y;width;height;radius?]
 ```
 
@@ -20,12 +16,12 @@ $fillRect[canvas;x;y;width;height;radius?]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| canvas | string | Name of the canvas. | yes |
-| x | number | X position of the rect. | yes |
-| y | number | Y position of the rect. | yes |
-| width | number | Width of the rect. | yes |
-| height | number | Height of the rect. | yes |
-| radius | number | Corners radius of the rect. (size affects) | no |
+| canvas | string | Name of the canvas. | true |
+| x | number | X position of the rect. | true |
+| y | number | Y position of the rect. | true |
+| width | number | Width of the rect. | true |
+| height | number | Height of the rect. | true |
+| radius | number | Corners radius of the rect. (size affects) | false |
 
 ## Example(s)
 
@@ -46,4 +42,4 @@ bot.command({
 
 ### Showcase
 
-![](img/color.png)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/color.png?raw=true)

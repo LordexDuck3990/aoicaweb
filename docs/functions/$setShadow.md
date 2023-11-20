@@ -4,15 +4,11 @@ description: $setShadow will add shadow to the canvas.
 id: setShadow
 ---
 
-# $setShadow
-
 It adds shadow to the canvas.
-
----
 
 ## Usage
 
-```
+```php
 $setShadow[canvas;size]
 ```
 
@@ -20,8 +16,8 @@ $setShadow[canvas;size]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| canvas | string | Name of the canvas. | yes |
-| size | number | Size of shadow. | yes |
+| canvas | string | Name of the canvas. | true |
+| size | number | Size of shadow. | true |
 
 ## Example(s)
 
@@ -46,4 +42,4 @@ bot.command({
 
 ### Showcase
 
-![](img/pro.png)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/pro.png?raw=true)

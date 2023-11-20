@@ -4,15 +4,11 @@ description: $measureText will return the text size.
 id: measureText
 ---
 
-# $measureText
-
 It returns text size.
-
----
 
 ## Usage
 
-```
+```php
 $measureText[canvas;text;argument]
 ```
 
@@ -20,9 +16,9 @@ $measureText[canvas;text;argument]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| canvas | string | Name of the canvas. | yes |
-| text | string | Text. | yes |
-| argument | string | Size argument to return. (width/height) | yes |
+| canvas | string | Name of the canvas. | true |
+| text | string | Text. | true |
+| argument | string | Size argument to return. (width/height) | true |
 
 ## Example(s)
 

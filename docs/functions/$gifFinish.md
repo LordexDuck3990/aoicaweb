@@ -4,15 +4,11 @@ description: $gifFinish will end gif editing process.
 id: gifFinish
 ---
 
-# $createGIF
-
 It ends gif editing process.
-
----
 
 ## Usage
 
-```
+```php
 $gifFinish[gif]
 ```
 
@@ -20,7 +16,7 @@ $gifFinish[gif]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| gif | string | Name of the gif. | yes |
+| gif | string | Name of the gif. | true |
 
 ## Example(s)
 
@@ -63,4 +59,4 @@ bot.command({
 
 ### Showcase
 
-![](img/colorgif.gif)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/colorgif.png?raw=true)

@@ -4,15 +4,11 @@ description: $gifStart will start gif editing process.
 id: gifStart
 ---
 
-# $createGIF
-
 It starts gif editing process.
-
----
 
 ## Usage
 
-```
+```php
 $gifStart[gif]
 ```
 
@@ -20,7 +16,7 @@ $gifStart[gif]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| gif | string | Name of the gif. | yes |
+| gif | string | Name of the gif. | true |
 
 ## Example(s)
 
@@ -63,4 +59,4 @@ bot.command({
 
 ### Showcase
 
-![](img/colorgif.gif)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/colorgif.png?raw=true)

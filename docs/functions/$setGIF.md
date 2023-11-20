@@ -4,15 +4,11 @@ description: $setGIF will start gif editing process.
 id: setGIF
 ---
 
-# $createGIF
-
 It sets gif property. (delay, quality, threshold, repeat)
-
----
 
 ## Usage
 
-```
+```php
 $setGIF[gif;param;value]
 ```
 
@@ -20,9 +16,9 @@ $setGIF[gif;param;value]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| gif | string | Name of the gif. | yes |
-| param | string | Property of the gif. | yes |
-| value | number | Value to set. | yes |
+| gif | string | Name of the gif. | true |
+| param | string | Property of the gif. | true |
+| value | number | Value to set. | true |
 
 ## Example(s)
 
@@ -65,4 +61,4 @@ bot.command({
 
 ### Showcase
 
-![](img/colorgif.gif)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/colorgif.png?raw=true)

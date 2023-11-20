@@ -4,15 +4,11 @@ description: $addFrame will add frame to the GIF.
 id: addFrame
 ---
 
-# $addFrame
-
 It adds frame to GIF.
-
----
 
 ## Usage
 
-```
+```php
 $addFrame[gif;canvas]
 ```
 
@@ -20,8 +16,8 @@ $addFrame[gif;canvas]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| gif | string | Name of the gif. | yes |
-| canvas | string | Name of the canvas. | yes |
+| gif | string | Name of the gif. | true |
+| canvas | string | Name of the canvas. | true |
 
 ## Example(s)
 
@@ -64,4 +60,4 @@ bot.command({
 
 ### Showcase
 
-![](img/colorgif.gif)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/colorgif.png?raw=true)

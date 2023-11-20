@@ -4,15 +4,11 @@ description: $drawImage will draw image by loaded image id to the canvas.
 id: drawImage
 ---
 
-# $drawImage
-
 It draws image in canvas.
-
----
 
 ## Usage
 
-```
+```php
 $drawImage[canvas;id;x;y;width;height;radius?]
 ```
 
@@ -20,13 +16,13 @@ $drawImage[canvas;id;x;y;width;height;radius?]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| canvas | string | Name of the canvas. | yes |
-| id | string | ID of the image. | yes |
-| x | number | The x position. | yes |
-| y | number | The y position. | yes |
-| width | number | Image width. | yes |
-| height | number | Image height. | yes |
-| radius | number | Corners radius of image. (size affects) | no | 
+| canvas | string | Name of the canvas. | true |
+| id | string | ID of the image. | true |
+| x | number | The x position. | true |
+| y | number | The y position. | true |
+| width | number | Image width. | true |
+| height | number | Image height. | true |
+| radius | number | Corners radius of image. (size affects) | false | 
 
 ## Example(s)
 
@@ -51,4 +47,4 @@ bot.command({
 
 ### Showcase
 
-![](img/pro.png)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/pro.png?raw=true)

@@ -4,15 +4,11 @@ description: $loadImage will load image to the canvas.
 id: loadImage
 ---
 
-# $loadImage
-
 It loads image to canvas.
-
----
 
 ## Usage
 
-```
+```php
 $loadImage[canvas;id;type;path]
 ```
 
@@ -20,10 +16,10 @@ $loadImage[canvas;id;type;path]
 
 | Field | Type | Description | Required |
 | ----- | ---- | ----------- | :------: |
-| canvas | string | Name of the canvas. | yes |
-| id | string | ID of the image. | yes |
-| type | string | Type of the image. (url/file) | yes |
-| path | string | Path to image. (url/file) | yes |
+| canvas | string | Name of the canvas. | true |
+| id | string | ID of the image. | true |
+| type | string | Type of the image. (url/file) | true |
+| path | string | Path to image. (url/file) | true |
 
 ## Example(s)
 
@@ -48,4 +44,4 @@ bot.command({
 
 ### Showcase
 
-![](img/pro.png)
+![showcase](https://github.com/LordexDuck3990/aoicaweb/blob/master/docs/functions/img/pro.png?raw=true)
